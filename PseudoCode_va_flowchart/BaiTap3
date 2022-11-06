@@ -1,0 +1,18 @@
+// tim gia tri lon nhat trong 3 so
+
+BEGIN
+  INPUT a
+  INPUT b
+  INPUT
+    IF  a > b AND a > c
+        DISPLAY a max
+    ELSE
+        IF a < b OR a < c
+            IF  b > c 
+                 DISPLAY b max
+            ELSE
+                 DISPLAY c max
+            END IF
+        END IF
+    END IF
+ END

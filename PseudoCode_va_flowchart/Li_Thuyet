@@ -1,0 +1,64 @@
+//**********
+BEGIN
+INPUT A, B         //nhap
+C = A + B
+DISPLAY C          //xuat
+END
+
+
+
+// VD7 : Ðể xem xét nhà cung cấp có đạt MVS (nhà cung cấp quan trọng nhất) không?
+- một công ty sẽ kiểm tra xem nhà cung cấp đó đã có làm việc với công ty ít nhất 10 năm không?
+- và đã có tổng doanh thu ít nhất 5,000,000 không?
+BEGIN
+  INPUT yearsWithUs
+  INPUT bizDone
+  IF yearsWithUs >= 10 AND bizDone >=5000000       //toan tu AND ( ca 2 dieu kien ) - OR ( chi can 1 trong 2 true )
+       DISPLAY "Classified as an MVS"
+  ELSE
+       DISPLAY "A little more effort required!"
+  END IF
+END
+
+// VD8 : Cấu trúc IF lồng nhau là câu lệnh IF này nằm trong trong câu lệnh IF khác.
+- viết lại ví dụ 7 sử dụng cấu trúc IF lồng nhau ở ví dụ 8
+BEGIN
+  INPUT yearsWithUs
+  INPUT bizDone
+  IF yearsWithUs >= 10                             // neu thoa man thi tiep tuc IF
+     IF bizDone >=5000000                          // neu thoa man thi true
+        DISPLAY "Classified as an MVS"
+     ELSE
+        DISPLAY "A little more effort required!"
+     END IF
+  ELSE
+     DISPLAY "A little more effort required!"
+  END IF
+END
+
+
+
+// VD 11 : Chương trình hiển thị tên của ta 5 lần
+BEGIN
+DISPLAY "Scooby"
+DISPLAY "Scooby"
+DISPLAY "Scooby"
+DISPLAY "Scooby"
+DISPLAY "Scooby"
+END
+
+// VD 12 : Chương trình hiển thị tên Do loop và End loop
+- những câu lệnh nằm giữa Do loop và End loop (trong ví dụ trên là lệnh DISPLAY) được thực thi 1000 lần
+Do loop 1000 times
+   DISPLAY "Scooby"
+End loop
+
+// VD 13 : Chương trình hiển thị tên dùng cấu trúc vòng lặp
+BEGIN
+  n=0
+  WHILE (n < 1000)
+  DO
+    DISPLAY "Scooby"
+    n=n+1
+  END DO
+END

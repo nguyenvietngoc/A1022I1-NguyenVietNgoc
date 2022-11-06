@@ -1,0 +1,8 @@
+// mo ta thuat toan chuyen doi tien te
+
+BEGIN
+  INPUT N
+  $1 = 23000 VND
+  A = N * 23000
+  DISPLAY A "VND"
+ END
