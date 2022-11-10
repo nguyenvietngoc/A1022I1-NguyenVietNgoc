@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo Form cơ bản</title>
+</head>
+<body>
+<form action="" ; method="get">
+    <table>
+        <h1 style ="background-color: orange; text-align: center; color:white"> SỞ THÍCH CỦA BẠN </h1>
+        <tr>
+            <th>Họ và tên:</th>
+            <td> <input tyle="textbox" name="yourname"></td>
+        </tr>
+        <tr>
+            <th style="text-align: right">Email:</th>
+            <td> <input type="textbox" name="Email"></td>
+        </tr>
+    </table>
+    <div>
+        <table>
+            <tr>
+                <th rowspan="3"; style="vertical-align:top">Sở Thích</th>
+                <td><input type="checkbox" name="hoppy">Thể thao</td>
+                <td><input type="checkbox" name="hoppy">Âm nhạc</td>
+                <td><input type="checkbox" name="hoppy">Đọc sách</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="hoppy">Lướt web</td>
+                <td><input type="checkbox" name="hoppy">Chơi game</td>
+                <td><input type="checkbox" name="hoppy">Điện ảnh</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="hoppy">Du lịch</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <tr>
+        <th>
+            <label style="margin-left: 65px"><input type="submit" name="submitinfor" value="Gửi thông tin"/></label>
+        </th>
+        <td>
+            <input type="reset" name="resetname" value="Nhập lại"/>
+        </td>
+    </tr>
+    </table>
+</form>
+<br/>
+<h1 style="background-color: aqua;color:blue "><strong>ĐĂNG KÍ HỌC VIÊN  </strong> </h1>
+<form>
+    <table>
+        <tr>
+            <th>Họ và tên</th>
+            <td><input name="yourname" type="textbox"></td>
+        </tr>
+        <tr>
+            <th>Ngày sinh</th>
+            <td ><input name="birthday" type="texbox"></td>
+        </tr>
+        <tr>
+            <th>Giới tính</th>
+            <td><input name="sex" type="radio">Nam&ensp;<input name="sex" type="radio">Nữ </td>
+        </tr>
+        <tr>
+            <th>Địa chỉ</th>
+            <td><textarea name="info" rows="5" cols="20"></textarea></td>
+        </tr>
+        <tr>
+            <th>Lớp</th>
+            <td>
+                <select name="class">
+                    <option>-Chọn lớp-</option>
+                    <option>Lớp 01</option>
+                    <option>Lớp 02</option>
+                    <option>Lớp 03</option>
+                    <option>Lớp 04</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="texbox" name="email"></td>
+        </tr>
+        </tr>
+        <tr>
+            <th>Điện thoại</th>
+            <td><input type="texbox" name="tele"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="submit" value="Đăng kí">&ensp;
+                <input type="reset" name="reset" value="Nhập lại"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
