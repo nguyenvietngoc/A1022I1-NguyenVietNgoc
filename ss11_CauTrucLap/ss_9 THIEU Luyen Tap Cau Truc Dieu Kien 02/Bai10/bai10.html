@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Sodien =+prompt("Nhập số điện :");
+    let tienDien;
+    let B1=1678,B2=1734,B3=2014,B4=2536,B5=2834,B6=2927;
+    if(Sodien<0){
+        document.write("Vui lòng nhập lại");
+    }
+    if(Sodien<=50){
+        tienDien=Sodien*B1;
+    }
+    else if(Sodien<=100){
+        tienDien=50*B1+((Sodien-50)*B2);
+    }
+    else if(Sodien<=200) {
+        tienDien = (50 * B1) + (50 * B2) + ((Sodien - 100) * B3);
+    }
+    else if(Sodien<=300) {
+        tienDien = (50 * B1) + (50 * B2) + (100 * B3) + ((Sodien - 200) * B4);
+    }
+    else if(Sodien<=400) {
+        tienDien = (50 * B1) + (50 * B2) + (100 * B3) + (100 * B4) + ((Sodien - 300) * B5);
+    }
+    else if(Sodien>400){
+        tienDien= (50 * B1)+(50 * B2)+(100 * B3)+(100 * B4)+(100 * B5)+((Sodien - 400)*B6);
+    }
+    document.write("Tổng tiền điện của bạn là :" + tienDien + "đ");
+</script>
+</body>
+</html>

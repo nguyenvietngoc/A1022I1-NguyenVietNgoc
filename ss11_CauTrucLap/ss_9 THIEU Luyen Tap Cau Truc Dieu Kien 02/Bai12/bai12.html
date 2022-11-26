@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let loanAmount = +prompt('Enter Loan Amount');
+    let loanTime = +prompt('Enter the months time of loan');
+    let loanRate = +prompt('Enter the rate per month');
+    let a = loanAmount*loanRate/100;
+    let b = loanTime*loanAmount*loanRate/100;
+    document.write('Tiền lãi hàng tháng là: '+ a +'</br>');
+    document.write('Tiền lãi cả kì là: '+b);
+</script>
+</body>
+</html>

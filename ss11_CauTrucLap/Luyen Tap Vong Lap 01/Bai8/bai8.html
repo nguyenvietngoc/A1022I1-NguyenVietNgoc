@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input style="background-color: blue; width: 100px; height: 50px" type="button" value="PLAY" onclick="startGaming()">
+<script>
+    function startGaming() {
+        let check = Math.floor(Math.random()*50);
+        // function getRandomInt(min, max) {
+        //     min = Math.ceil(min);
+        //     max = Math.floor(max);
+        //     return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+        let count = 0;
+        do{
+            let number = +prompt("Enter your guess number from 1 to 50: ");
+            if(number === check){
+                alert("Congratulations!");
+                break;
+            }
+            else{
+                count++;
+                if(number < check){
+                    alert("Your number is less than the correct one.");
+                }
+                if(number > check){
+                    alert("Your number is greater than the correct one.");
+                }
+                if(count < 3) {
+                    alert("Let try again!");
+                }
+            }
+        }while (count != 3);
+        alert("Game over!!!");
+    }
+</script>
+</body>
+</html>

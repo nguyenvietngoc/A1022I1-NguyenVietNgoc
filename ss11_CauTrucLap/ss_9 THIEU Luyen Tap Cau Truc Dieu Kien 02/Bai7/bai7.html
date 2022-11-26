@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x1 , x2
+    let a = +prompt('nhập số a');
+    let b = +prompt('nhập số b');
+    let c = +prompt('nhập số c');
+    let denta =(b*b-4*a*c);
+    if(denta == 0) {
+        x1=-b/(2*a);
+        x2=-b/(2*a);
+        alert('Phương trình có nghiệm kép :'+ x1 + x2);
+    }else if (denta > 0) {
+        x1=(-b+Math.sqrt(denta))/(2*a);
+        x2=(-b-Math.sqrt(denta))/(2*a);
+        alert('Phương trình có 2 nghiệm phân biệt là :' + x1 + ' và ' + x2);
+    }else
+        alert('Phương trình vô nghiệm !')
+</script>
+</body>
+</html>
